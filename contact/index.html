@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Luciano Iacobelli</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<script src="/nav.js"></script>
+
+<div class="page-header">
+  <h1>Contact</h1>
+</div>
+
+<section class="contact-section">
+  <p>If you have any questions, comments, or feedback, please feel free to get in touch with me. I'd love to hear from you!</p>
+  <p>E-Mail: <a href="mailto:julianiacobelli1@gmail.com">julianiacobelli1@gmail.com</a></p>
+  <p style="margin-top:1.5rem;">Thank you for your interest, and I look forward to hearing from you soon.</p>
+
+  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+    </div>
+    <div>
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required>
+    </div>
+    <div>
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="phone" placeholder="(optional)">
+    </div>
+    <div>
+      <label for="comment">Comment</label>
+      <textarea id="comment" name="message" placeholder="Your message..."></textarea>
+    </div>
+    <button type="submit" class="btn-primary">Send</button>
+  </form>
+</section>
+
+</body>
+</html>

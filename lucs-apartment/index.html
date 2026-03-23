@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luc's Apartment — Luciano Iacobelli</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<script src="/nav.js"></script>
+
+<div class="page-header">
+  <h1>Luc's Apartment</h1>
+  <p>Images by Vincenzo Pietropaolo &mdash; all rights reserved</p>
+</div>
+
+<div class="apartment-full">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0585.jpg?v=1682794996&width=2000" alt="Luc's Apartment" loading="lazy">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0630_8b41c022-da87-47b3-9d7a-39c0d0407a3b.jpg?v=1682871883&width=2000" alt="Luc's Apartment" loading="lazy">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0605.jpg?v=1682869705&width=2000" alt="Luc's Apartment" loading="lazy">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0607.jpg?v=1682869786&width=2000" alt="Luc's Apartment" loading="lazy">
+
+  <div class="apartment-grid-3">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0699.jpg?v=1682870138&width=900" alt="Luc's Apartment" loading="lazy">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0649.jpg?v=1682870036&width=900" alt="Luc's Apartment" loading="lazy">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0651.jpg?v=1682870055&width=900" alt="Luc's Apartment" loading="lazy">
+  </div>
+
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0692.jpg?v=1682869820&width=2000" alt="Luc's Apartment" loading="lazy">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0786.jpg?v=1682869944&width=2000" alt="Luc's Apartment" loading="lazy">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0684.jpg?v=1682870190&width=2000" alt="Luc's Apartment" loading="lazy">
+
+  <div class="apartment-grid-3">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0703.jpg?v=1682870416&width=900" alt="Luc's Apartment" loading="lazy">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0741.jpg?v=1682870449&width=900" alt="Luc's Apartment" loading="lazy">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0721.jpg?v=1682870496&width=900" alt="Luc's Apartment" loading="lazy">
+  </div>
+
+  <div class="apartment-grid-2">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0744.jpg?v=1682871320&width=900" alt="Luc's Apartment" loading="lazy">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0706.jpg?v=1682871297&width=900" alt="Luc's Apartment" loading="lazy">
+  </div>
+
+  <div class="apartment-grid-2">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0653_7ef1bedc-99c7-4271-be5d-002247bf1178.jpg?v=1682872273&width=900" alt="Luc's Apartment" loading="lazy">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0655.jpg?v=1682872289&width=900" alt="Luc's Apartment" loading="lazy">
+  </div>
+
+  <div class="apartment-grid-2">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0735.jpg?v=1682872143&width=900" alt="Luc's Apartment" loading="lazy">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0749.jpg?v=1682872491&width=900" alt="Luc's Apartment" loading="lazy">
+  </div>
+
+  <div class="apartment-grid-2">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0723.jpg?v=1682872861&width=900" alt="Luc's Apartment" loading="lazy">
+    <img src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0771.jpg?v=1682870598&width=900" alt="Luc's Apartment" loading="lazy">
+  </div>
+
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0677.jpg?v=1682871053&width=2000" alt="Luc's Apartment" loading="lazy">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0795.jpg?v=1682871644&width=2000" alt="Luc's Apartment" loading="lazy">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0599.jpg?v=1682871745&width=2000" alt="Luc's Apartment" loading="lazy">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0676.jpg?v=1682871824&width=2000" alt="Luc's Apartment" loading="lazy">
+  <img class="full-width" src="https://www.lucianoiacobelli.com/cdn/shop/files/IMG_0712.jpg?v=1682872391&width=2000" alt="Luc's Apartment" loading="lazy">
+</div>
+
+<!-- lightbox -->
+<div id="lightbox"><button id="lb-close">&times;</button><img id="lb-img" src="" alt=""></div>
+<script>
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lb-img');
+document.querySelectorAll('.apartment-full img').forEach(img => {
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', () => {
+    lbImg.src = img.src.replace(/&width=\d+/, '&width=2000');
+    lb.classList.add('open');
+  });
+});
+document.getElementById('lb-close').onclick = () => lb.classList.remove('open');
+lb.addEventListener('click', e => { if (e.target === lb) lb.classList.remove('open'); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Gemini/AI artifacts (only if in project)
+.gemini/
+brain/
+tmp/
+
+# Production builds
+dist/
+build/
