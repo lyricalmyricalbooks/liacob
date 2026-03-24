@@ -1,13 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Derive base URL from this script's own src — works on any host without hardcoding
-  var scripts = document.getElementsByTagName('script');
-  var base = '';
-  for (var i = 0; i < scripts.length; i++) {
-    var src = scripts[i].getAttribute('src');
-    if (src && src.indexOf('nav.js') !== -1) {
-      var a = document.createElement('a');
-      a.href = src;
-      base = a.href.replace('nav.js', '');
+  // Compute base by walking up from current page to find the root
+  // where index.html and nav.js live side by side.
+  // Works on GitHub Pages, Netlify, or any custom domain.
+  var path = window.location.pathname;
+
+  // Strip the filename if present
+  var dir = path.endsWith('/') ? path : path.substring(0, path.lastIndexOf('/') + 1);
+
+  // Walk up until we're at the directory that contains nav.js
+  // We know nav.js is at the site root. Subpages are 1 level deep (art/, poetry-books/, etc.)
+  // So if current dir ends with /art/ or /poetry-books/ etc., go up one level.
+  var subDirs = ['art/', 'poetry-books/', 'lyricalmyrical/', 'lucs-apartment/', 'contact/'];
+  var base = dir;
+  for (var i = 0; i < subDirs.length; i++) {
+    if (dir.endsWith(subDirs[i])) {
+      base = dir.substring(0, dir.length - subDirs[i].length);
       break;
     }
   }
@@ -55,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('header-nav').classList.toggle('open');
   });
 
-  var path = window.location.pathname;
   if (path.includes('/art/')) {
     var artLink = document.querySelector('.nav-art');
     if (artLink) artLink.classList.add('active');
