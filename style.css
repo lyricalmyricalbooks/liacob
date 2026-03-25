@@ -111,7 +111,7 @@ img { display: block; max-width: 100%; }
 .dropdown-panel {
   display: none;
   position: absolute;
-  top: calc(100% + 1.2rem);
+  top: 100%;
   left: 0;
   background: var(--bg);
   border: 0.1rem solid var(--rule);
@@ -120,7 +120,8 @@ img { display: block; max-width: 100%; }
   z-index: 300;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
-.nav-dropdown:hover .dropdown-panel { display: block; }
+.nav-dropdown:hover .dropdown-panel,
+.nav-dropdown:focus-within .dropdown-panel { display: block; }
 .dropdown-panel a {
   display: block;
   padding: 1rem 2.4rem;
