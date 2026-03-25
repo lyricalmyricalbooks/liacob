@@ -36,8 +36,15 @@ document.addEventListener('DOMContentLoaded', function() {
     + '</nav></div></header>';
 
   var FOOTER = '<footer><div class="footer-inner">'
-    + '<div class="footer-contact-block"><h4>Contact</h4>'
-    + '<p>For inquiries: <a href="mailto:julianiacobelli1@gmail.com">julianiacobelli1@gmail.com</a></p></div>'
+    + '<div class="footer-links-block"><h4>Quick links</h4>'
+    + '<div class="footer-quick-links">'
+    + '<a href="' + base + 'index.html">Home</a>'
+    + '<a href="' + base + 'art/large.html">Art</a>'
+    + '<a href="' + base + 'poetry-books/index.html">Poetry Books</a>'
+    + '<a href="' + base + 'lyricalmyrical/index.html">LyricalMyrical Covers</a>'
+    + '<a href="' + base + 'lucs-apartment/index.html">Luc\'s Apartment</a>'
+    + '<a href="' + base + 'contact/index.html">Contact</a>'
+    + '</div></div>'
     + '<div class="footer-bottom">&copy; 2026, Luciano Iacobelli</div>'
     + '</div></footer>';
 
